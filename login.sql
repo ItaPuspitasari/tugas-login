@@ -2,10 +2,10 @@
 -- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
--- Inang: 127.0.0.1
--- Waktu pembuatan: 16 Jan 2019 pada 05.26
--- Versi Server: 5.5.27
--- Versi PHP: 5.4.7
+-- Host: 127.0.0.1
+-- Generation Time: Jan 17, 2019 at 09:04 AM
+-- Server version: 5.5.27
+-- PHP Version: 5.4.7
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,32 +17,29 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Basis data: `dt_barang`
+-- Database: `lg_login`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `barang`
+-- Table structure for table `login`
 --
 
-CREATE TABLE IF NOT EXISTS `barang` (
+CREATE TABLE IF NOT EXISTS `login` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `kode` varchar(8) NOT NULL,
-  `nama` varchar(50) NOT NULL,
-  `deskripsi` text NOT NULL,
-  `stok` int(5) NOT NULL,
-  `harga` double(12,2) NOT NULL,
-  `berat` double(5,2) NOT NULL,
+  `nama` varchar(225) NOT NULL,
+  `username` varchar(225) NOT NULL,
+  `password` varchar(225) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
--- Dumping data untuk tabel `barang`
+-- Dumping data for table `login`
 --
 
-INSERT INTO `barang` (`id`, `kode`, `nama`, `deskripsi`, `stok`, `harga`, `berat`) VALUES
-(1, '12', 'buku', 'mm', 2, 80000.00, 2.00);
+INSERT INTO `login` (`id`, `nama`, `username`, `password`) VALUES
+(13, 'itaa', 'itaa', '1717');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
